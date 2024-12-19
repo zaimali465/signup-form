@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('images.jfif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #ebf8ff; /* fallback color in case image doesn't load */
+        }
+        .container {
+            background-color: white;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+            max-width: 700px;
+            border: 4px solid rgb(53, 32, 184); /* Black border */
+        }
+        .alert-custom {
+            background-color: #fff3cd;
+            border-left: 1px solid #ffeeba;
+            color: #856404;
+        }
+        .icon-input {
+            position: relative;
+        }
+        .icon-input input {
+            padding-left: 20px; /* Add space for the icon */
+        }
+        .icon-input .fas {
+            position: absolute;
+            left: 10px;
+            top: 70%;
+            transform: translateY(-50%);
+            color: #6c757d;
+        }
+        .code-display {
+            margin-left: 10px;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.2 rem;
+        }
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container bg-white p-4 rounded shadow-sm" style="max-width: 700px;">
+        <h1 class="text-center text-primary mb-4">Sign Up</h1>
+        <div class="alert alert-custom" role="alert">
+            <strong>(*) fields are mandatory to fill.</strong><br>
+            Add your email address and mobile number carefully they will be used for further correspondence.
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6 icon-input">
+                    <label>First Name (As per Matric) <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" >
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group col-md-6 icon-input">
+                    <label>Email Address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" >
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 icon-input">
+                    <label>Middle Name</label>
+                    <input type="text" class="form-control">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group col-md-6 icon-input">
+                    <label>Other Phone Number</label>
+                    <input type="text" class="form-control" placeholder="9230233333333333">
+                    <i class="fas fa-phone"></i>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 icon-input">
+                    <label>Last Name (As per Matric) <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" >
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Personal Mobile Number (3023545618) <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <select class="custom-select">
+                            <option>+92</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Personal Mobile Number">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Gender <span class="text-danger">*</span></label>
+                    <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 icon-input">
+                    <label>CNIC <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" placeholder="xxxxxxxxxxxxxx">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Country <span class="text-danger">*</span></label>
+                    <select class="form-control">
+                        <option>Pakistan</option>
+                        <option>India</option>
+                        <option>Bangladesh</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="Enter Code">
+                    <span class="code-display">82U4X</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Verify Before Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
